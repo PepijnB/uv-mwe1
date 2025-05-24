@@ -1,0 +1,31 @@
+version = 1
+revision = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "uv-mwe-mypackage1"
+version = "0.1.0"
+source = { git = "https://github.com/PepijnB/uv_mwe_mypackage1.git#48a52d3e5e82133ba0731f574369877af7bda0de" }
+dependencies = [
+    { name = "uv-mwe-mypackage2" },
+]
+
+[[package]]
+name = "uv-mwe-mypackage2"
+version = "0.1.0"
+source = { git = "https://github.com/PepijnB/uv_mwe_mypackage2.git#5479f781a4dc7fc2b5a5377a8613dcfed1b49122" }
+
+[[package]]
+name = "uv-mwe1"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "uv-mwe-mypackage1" },
+    { name = "uv-mwe-mypackage2" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "uv-mwe-mypackage1", git = "https://github.com/PepijnB/uv_mwe_mypackage1.git" },
+    { name = "uv-mwe-mypackage2", git = "https://github.com/PepijnB/uv_mwe_mypackage2.git?tag=v0.1.2" },
+]
