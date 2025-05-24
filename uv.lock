@@ -17,7 +17,6 @@ source = { git = "https://github.com/PepijnB/uv_mwe_mypackage2.git#5479f781a4dc7
 
 [[package]]
 name = "uv-mwe1"
-version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "uv-mwe-mypackage1" },

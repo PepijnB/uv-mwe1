@@ -11,7 +11,7 @@ dynamic = ["version"]
 
 [tool.uv.sources]
 uv-mwe-mypackage1 = { git = "https://github.com/PepijnB/uv_mwe_mypackage1.git" }
-uv-mwe-mypackage2 = { git = "https://github.com/PepijnB/uv_mwe_mypackage2.git", tag = "v0.1.2" }
+uv-mwe-mypackage2 = { git = "https://github.com/PepijnB/uv_mwe_mypackage2.git", tag = "v0.1.4" }
 
 [build-system]
 requires = ["hatchling >= 1.26", "hatch-vcs"]
